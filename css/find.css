@@ -1,0 +1,142 @@
+.moreMenu {
+  margin: 15px 15px;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+.icons__column {
+  display: flex;
+  padding: 8px 0;
+}
+
+.icons__column__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+}
+.icons__column__item i {
+  font-size: 25px;
+  opacity: 0.8;
+}
+.icons__column__item span {
+  margin-top: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.divider {
+  display: flex;
+  height: 0.5px;
+  margin: 12px 15px;
+  border: none;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.recommendation {
+  opacity: 0.6;
+  padding: 0 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.recommendation__text {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.open-chat {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 15px;
+}
+.chat__column {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  position: relative;
+}
+.chat__column__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content__title {
+  opacity: 0.7;
+}
+.open-chat__top {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.4;
+}
+.open-chat__top__link {
+  font-size: 11px;
+  margin: 5px 0;
+}
+.content__tag {
+  opacity: 0.4;
+}
+.content__state {
+  opacity: 0.4;
+}
+.chat__column > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.chat {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__state {
+  display: flex;
+  align-items: center;
+}
+.content__state > div {
+  margin: 0 2px;
+}
+.verti-divider {
+  background-color: black;
+  width: 0.1px;
+  height: 8px;
+  border: 1px solid black;
+}
+
+.heart {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 1px 2px;
+}
+@keyframes heartanimation {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.heart:active i {
+  will-change: transform;
+  animation: heartanimation 0.5s linear infinite;
+}
