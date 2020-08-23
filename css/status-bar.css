@@ -1,0 +1,45 @@
+#status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3px;
+}
+.status-bar__column {
+  font-size: 12px;
+  font-weight: 600;
+}
+.status-bar__time {
+  font-size: 14px;
+}
+.status-bar__battery {
+  display: inline-block;
+  position: relative;
+  padding-top: 4px;
+}
+.fa-battery-empty {
+  font-size: 17px;
+}
+.status-bar__battery-level {
+  width: 2px;
+  height: 4.4px;
+  position: absolute;
+  background-color: red;
+  left: 3px;
+  top: 10.3px;
+}
+@keyframes facog {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5) rotate(360deg);
+    color: red;
+  }
+  100 {
+    transform: none;
+  }
+}
+
+.option .fa-cog:active {
+  animation: facog 0.2s ease-in infinite;
+}
