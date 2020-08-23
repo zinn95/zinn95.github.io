@@ -1,0 +1,32 @@
+header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  padding-top: 15px;
+
+  font-size: 18px;
+header > .subject {
+  font-size: 23px;
+  font-weight: bold;
+}
+header > .option i {
+  margin-left: 10px;
+}
+
+@keyframes facog {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5) rotate(360deg);
+    color: red;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.option .fa-cog:active {
+  animation: facog 0.2s ease-in infinite;
+}
