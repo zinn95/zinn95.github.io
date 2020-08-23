@@ -1,0 +1,88 @@
+.friends-setting {
+  width: 100%;
+  height: 30px;
+  background-color: snow;
+  text-align: center;
+  vertical-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+}
+.friends-setting i {
+  margin: 0 5px;
+}
+.my {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.my img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.divider {
+  display: flex;
+  height: 0.5px;
+  margin: 10px 15px;
+  border: none;
+  background-color: black;
+  opacity: 0.2;
+}
+.content {
+  padding: 0 15px;
+}
+.content__subject {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.content__list {
+  list-style: none;
+  padding: 0;
+}
+.content__list__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.content__list__item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.list__item__elements {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.splash-screen {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+}
